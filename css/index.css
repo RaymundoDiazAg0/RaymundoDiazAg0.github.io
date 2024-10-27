@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: radial-gradient(circle, rgba(251,252,250,1) 0%, rgba(255,235,201,1) 100%);
+    font-family: 'Lora', serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#main > *{
+    margin-bottom: 25px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toggle-btn{
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(173, 173, 173);
+
+    position: fixed;
+    right: 0;
+    top: 25px;
+    transform: translateY(-50%);
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+.portada img{
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#banner1{
+    background-image: url('/img/reel/1.jpg');
+    background-size: cover;
+    background-position-y: 70%;
+    background-repeat: repeat;
+}
+
+#banner2{
+    background-image: url('/img/reel/2.jpg');
+    background-size: cover;
+    background-position-y: 70%;
+    background-position-x: left;
+    background-repeat: repeat;
+}
+
+#banner3{
+    background-image: url('/img/reel/4.jpg');
+    background-size: cover;
+    background-position-y: 40%;
+    background-position-x: 50%;
+    background-repeat: repeat;
+}
+
+#banner4{
+    background-image: url('/img/reel/3.jpg');
+    background-size: cover;
+    background-position-y: 70%;
+    background-position-x: 70%;
+    background-repeat: repeat;
+    margin: 0;
+}
+
+.liston{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FCFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.liston button{
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: lighter;
+    font-style: italic;
+
+    background: linear-gradient(90deg, #E8BF30, #91781e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Great Vibes", cursive;
+}
+
+.liston h3{
+    font-size: 18px;
+    color: #AAA9A9;
+    font-weight: lighter;
+}
+
+.lugar{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lugar img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.lugar button{
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.lugar h3{
+    font-size: 18px;
+    color: #8a8a8a;
+    font-weight: lighter;
+}
+
+.itinerario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 350px;
+}
+
+.itinerario img{
+    width: 100%;
+}
+
+.detalles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    text-align: center;
+}
+
+.icon{
+    width: 50px;
+}
+
+.liverpool{
+    width: 150px;
+}
+
+.detalles h3{
+    font-size: 16px;
+    font-weight: lighter;
+    background: linear-gradient(90deg, #E8BF30, #91781e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.detalles p{
+    font-size: 18px;
+    color: #8a8a8a;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.detalles button{
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+h2, h3{
+    margin: 10px;
+}
+
+.momentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active{
+    background:linear-gradient(90deg, #E8BF30, #816c24);
+}
+
+video{
+    max-width: 350px;
+}
+
+#playButton{
+    border: 0;
+    background-color: #f5f0dfb7;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 5px;
+    top: 90%;
+    transform: translateY(-50%);
+    transition: color 0.3s ease;
+
+    color: #776319;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#playButton:hover{
+    cursor: pointer;
+}
+
+.padres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mesa{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #FCFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.square-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    background-color: #ffffff56;
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square h3{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+    
+    background: linear-gradient(90deg, #faecb8, #f8e290);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Lora", serif;
+}
+
+.element p{
+    font-size: 18px;
+    font-weight: lighter;
+    background: linear-gradient(90deg, #ffffff, #f5f0df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.detalles h3{
+    margin: 0;
+}
+
+.confirmar{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmar label{
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: lighter;
+    
+    background: linear-gradient(90deg, #d4ad1e, #574918);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Great Vibes", cursive;
+}
+
+.confirmar button{
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+form input{
+    height: 30px;
+    width: 200px;
+}
+
+#mensaje{
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .banner{
+        height: 400px;
+    }
+
+    #playButton{
+        top: 95%;
+    }
+}
