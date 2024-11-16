@@ -61,7 +61,7 @@
             </div>
 
             <div class="banner" id="banner2">
-                <div class="countdown detalles" id="cuenta-regresiva">
+                <div class="countdown" id="cuenta-regresiva">
                     <div class="square-flex">
                         <div class="element">
                             <div class="square">
@@ -189,7 +189,7 @@
                 document.getElementById("seconds").innerHTML = `${segundos}`;
             } else {
                 clearInterval(intervalo);
-                document.getElementById("cuenta-regresiva").innerHTML = `<h3>¡Llegó el gran día, te esperamos!</h3>`;
+                document.getElementById("cuenta-regresiva").innerHTML = `<h2>¡Llegó el gran día, te esperamos!</h2>`;
             }
         }, 1000);
     </script>
