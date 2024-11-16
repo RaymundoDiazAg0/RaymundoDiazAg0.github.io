@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+#over{
+    font-size: 52px;
+    color: linear-gradient(90deg, #ddd7c3, #fffdf6);
+}
+
 body {
     margin: 0;
     padding: 0;
